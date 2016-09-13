@@ -1,0 +1,45 @@
+{% extends "bases/bootstrap-visitor.html" %}
+
+{% block content %}
+
+{% load bootstrap3 %}
+
+<div class="container">
+
+<p>
+    <h1>Compatible Printers</h1>
+    
+    <p>
+        The Infinity-Module is the control unit for the Infinty-Box. The Infinity-Box you get everything bundled together for easiest experience, but the Infinity-Module can stand alone as well.  It is easily compatible with most existing 3D printers to simplify the 3D printing experience. Any printer that takes gcode and can use slic3r is compatible, including custom repraps.
+
+        <br><br>
+        Check below to see which printers and plastic options are instantly available, or login to add a slic3r configuration file and help simplify it for everyone! </p>
+
+    
+    <h2> Upload Slic3r config file here</h2>
+    <div class="row">
+    <div class="col-md-4 col-lg-4">
+
+      <form action="{% url "up_config" %}" method="post" class="form" enctype="multipart/form-data">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        {% buttons %}
+        <button type="submit" class="btn btn-primary">
+          {% bootstrap_icon "star" %} Submit
+        </button>
+        {% endbuttons %}
+    </div>
+</div>
+    <h2> Printers </h2>
+    {% if documents %}
+            <ul>
+                {% for document in documents %}
+                    <li><a href="{{ ConfigFiles.HDConfig.url }}">{{ ConfigFiles.HDConfig.name }}</a></li>
+                {% endfor %}
+            </ul>
+    {% else %}
+            <p>Not showing in front yet.</p>
+    {% endif %}
+
+</div>
+{% endblock %}

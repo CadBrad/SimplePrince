@@ -1,0 +1,53 @@
+{% extends "bases/bootstrap-visitor.html" %}
+
+{% block content %}
+
+<div class="container">
+<p class="text-center">
+
+    <div class="row" align="center" >
+<h1> Get a Quote </h1>
+<h3> Submit an STL file with the button below. </h3> 
+
+
+<a href="https://www.3dhubs.com/los-angeles/hubs/3dprince" data-3dhubs-widget="button" data-hub-id="71649" data-type="orderWidget" data-color="light" data-size="normal" data-text="Order a 3D Print" >Click here to Upload</a> 
+
+<script>!function(a,b,c,d){var e,g=(a.getElementsByTagName(b)[0],/^http:/.test(a.location)?"http":"https");a.getElementById(d)||(e=a.createElement(b),e.id=d,e.src=g+"://d3d4ig4df637nj.cloudfront.net/w/2.0.js",e.async=!0,a.body.appendChild(e))}(document,"script",1,"h3d-widgets-js");
+</script>
+</div>
+</p>
+<p>
+<br>
+<div class="quote">
+<h1> Common questions </h1>
+<div class="row">
+<div class="col-md-4">
+<h2> Which plastic should I choose? </h2>
+We usually recommend PLA plastic for most jobs, and the most common plastics available are PLA and ABS.  These are good general purpose hard plastics, and easy to run through a 3D printer.  Besides hard plastics there are rubber-like materials to make flexible models. There are many options for exotic plastics beyond the most common choices and depends on the needs of the end piece.
+</div>
+<div class="col-md-4">
+<h2> What is Layer Height? </h2>
+3D Printers lay down plastic one layer at a time, and build consecutive layers on top until the object is complete.  This causes the visible lines that are commonly associated with 3D printed objects.  Smaller layers will produce a smoother object with less noticible lines, but takes significantly more time. Typical layer heights are <100 microns for great detail, 200 microns for average, and 300 microns for quickest printing time.  
+</div>
+<div class="col-md-4">
+<h2> How long does it take? </h2>
+3D printing is a slow process, which can take anywhere from an hour for a small part to multiple hours or even days to render a large file. The time will depend not only on the size of the object but also the resolution and print speed. Slower speeds generally produce more accurate details. Turnaround time will vary depending on the size of the job, the resolution, the number of jobs ahead of you, and other factors, but in general we can render most jobs in 1-2 days and ship your part to you in another 3-5 days or faster if you choose Priority or Express shipping.
+
+</div>
+</div>
+
+
+
+<h2> What if I don't have a file? </h2>
+3DPrince can help create a file using CAD software, just fill out the <a href='{url 'contact'}'> contact form </a> and let us know about your project. If you have a different file type, let us know what format and we can help convert it.
+
+<h2> How does 3D Printing work? </h2>
+Plastic 3D filament is fed into a heated print head (or “hotend”) that melts the plastic and extrudes it in a thin thread, “drawing” the object much like a plotter, but in three dimensions. A special program called slicing software breaks the 3D model into many thin slices and then creates a toolpath for the printer to render each slice. Once the first slice is complete, the printer moves up to the next layer and draws that, continuing in a slow process until all slices are drawn and a 3D object is created.
+
+</p>
+</div>
+</div>
+
+{% endblock %}
+
+

@@ -1,0 +1,35 @@
+{% extends "bases/bootstrap-visitor.html" %}
+
+{% block content %}
+
+<div class="container">
+      <!-- Example row of columns -->
+      <div class="about">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>What is 3DPrince?</h2>
+          <p>3DPrince is a rapid prototyping company specializing in 3D printing and CAD design. By employing several different types of 3D Printers and well as CAD design abilities, 3DPrince can be your complete solution to 3D printing. Contact us today and let us know what you would like to create!</p>
+          <p><a class="btn btn-default" href="{% url 'contact' %}" role="button">Contact us today</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Who is 3DPrince?</h2>
+          <p>3DPrince is run by entrepreneur Brad Jimenez out of a makerspace in Los Angeles, California. Brad is a musician and engineer and recently moved from Chicago to Los Angeles. Visit our 3Dhubs page to see reviews from previous customers and specific printer information.  </p>
+          <p><a class="btn btn-default" href="https://www.3dhubs.com/los-angeles/hubs/3dprince" role="button">Visit 3Dhubs shop</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Additional Services</h2>
+          <p>3DPrince offers many rapid prototyping options beyond 3D printing and CAD design. Some other options include CNC machining, laser cutting, and post processing for aesthetics.  We will help recommend which manufacturing process is best for your specific case. Visit the gallery for a small sample of some recent projects.</p>
+          <p><a class="btn btn-default" href="{% url 'gallery_pics' %}" role="button">View Gallery</a></p>
+        </div>
+      </div>
+    </div>
+<p>
+
+
+
+
+</div>
+
+{% endblock %}
+
+

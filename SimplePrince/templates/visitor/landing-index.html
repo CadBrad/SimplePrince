@@ -1,0 +1,44 @@
+{% extends "bases/bootstrap-visitor.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+
+<div class="container">
+  <div class="jumbotron text-center" align="center">
+<br><br>
+    <h2>3D Printing made easy </h2><br>
+    <p>
+      <a class="btn btn-lg btn-success " href="{% url 'quote' %}" role="button">Quote Existing File</a>
+      or
+      <a class="btn btn-lg btn-success " href="{% url 'contact' %}" role="button">Contact a Designer</a>
+    <br><br>
+    </p>
+  </div>
+  <p>
+    <div class="home">
+    <div class="row">
+    <div class="col-md-6">
+    
+    <h1>Create Anything</h1>
+    3D Printing doesn't need to be a complicated process.  Here at 3DPrince, we strive to empower everyone with the benefits of 3D printing. We offer easy solutions to print an existing STL file, or design a completly custom model using CAD software.</h4>
+  </div>
+    <div class="col-md-6">
+    <h1> Complete Solutions </h1>
+    <p>
+    If your project doesn't seem like the right fit for 3D printing there are several other rapid prototyping options including CNC machining and laser cutting. Thanks to our extensive experience, we will ensure your project is done correctly the first time. Visit our <a href="{% url 'contact' %}"> contact page </a> and let us know about your project!
+    </p>
+  </div>
+</div>
+  <div class="row">
+  <div class="col-md-12"> 
+    <h1> Additional Projects </h1>
+
+    The goal of 3DPrince is to make the tremendous benefits of 3D printing available to everyone. With this idea in mind, the <a href="{% url 'box' %}"> Infinity-Box </a> was born.  This is an on-going project aimed at make 3D printers as easy to use as any home appliance, like a TV or microwave. Visit the page to learn more or help contribute to the project. 
+  </div></div>
+</div>
+</div>
+
+{% endblock %}
+
+
