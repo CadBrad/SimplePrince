@@ -30,6 +30,12 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+#settings for production
+'''
+DEBUG = False
+ALLOWED_HOSTS = ['3DPrince.pythonanywhere.com']
+'''
+
 # Application definition
 
 INSTALLED_APPS = (
@@ -117,6 +123,10 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
+)
+
+STATIC_ROOT = (
+    os.path.join(BASE_DIR, "prodstatic")
 )
 
 MEDIA_URL = '/media/'
