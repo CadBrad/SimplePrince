@@ -22,7 +22,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 with open(BASE_DIR + '/static/secret_key.txt') as f:
     SECRET_KEY = f.read().strip()
-#SECRET_KEY = 'id1y2t2376jq7=j_@4_mttm$*lv(y^hs@queu%e18=+%733jj1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -99,7 +98,10 @@ DATABASES = {
 
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'CadBrad'
-EMAIL_HOST_PASSWORD = 'PlasticPrince2'
+
+with open(BASE_DIR + '/static/SG_secret_key.txt') as f:
+    EMAIL_HOST_PASSWORD = f.read().strip()
+
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 # Internationalization
