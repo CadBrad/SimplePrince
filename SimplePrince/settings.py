@@ -24,16 +24,19 @@ with open(BASE_DIR + '/static/secret_key.txt') as f:
     SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
+'''
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+'''
 
 #settings for production
-'''
+
 DEBUG = False
-ALLOWED_HOSTS = ['3DPrince.pythonanywhere.com']
-'''
+ALLOWED_HOSTS = [
+    '3DPrince.pythonanywhere.com',
+    '.3dprince.org'
+    ]
 
 # Application definition
 
